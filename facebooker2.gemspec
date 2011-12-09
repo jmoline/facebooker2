@@ -10,7 +10,7 @@ spec = Gem::Specification.new do |s|
   s.email = "mmangino@elevatedrails.com"
   s.homepage = "http://developers.facebook.com/docs/api"
 
-  s.add_dependency('mogli', ">=0.0.35")
+  s.add_dependency('mogli', ">=0.0.36")
   s.add_dependency('ruby-hmac')
 
   s.add_development_dependency('rake', '~> 0.8.7')
