@@ -12,7 +12,7 @@ module Facebooker2
       end
       
       def current_facebook_user
-        if (Facebooker2.oauth2)
+        if (fb_oauth2)
           oauth2_fetch_client_and_user
         else
           fetch_client_and_user
@@ -21,7 +21,7 @@ module Facebooker2
       end
       
       def current_facebook_client
-        if (Facebooker2.oauth2)
+        if (fb_oauth2)
           oauth2_fetch_client_and_user
         else
           fetch_client_and_user
@@ -105,6 +105,10 @@ module Facebooker2
       
       def fb_api_key
         Facebooker2.api_key
+      end
+      
+      def fb_oauth2
+        Facebooker2.oauth2
       end
       
       # check if the expected signature matches the one from facebook
